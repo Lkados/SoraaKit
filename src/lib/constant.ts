@@ -1,8 +1,8 @@
-import Home from '@/components/icons/home'
+import Home from '@/components/icons/home';
 
-export const clients = [...new Array(10)].map((client, index) => ({
+export const clients = [...new Array(10)].map((_, index) => ({
   href: `/assets/${index + 1}.png`,
-}))
+}));
 
 export const products = [
   {
@@ -83,47 +83,47 @@ export const products = [
     link: 'https://efreeinvoice.com',
     thumbnail: '/assets/p3.png',
   },
-]
-
+];
 
 export const menuOptions = [
   { name: 'Dashboard', Component: Home, href: '/dashboard' },
-]
-
+];
 
 export const plans = [
   {
     title: 'Starter',
     price: 0,
-    description: 'Get a glimpse of what our software is capable of. Just a heads up you\'ll never leave us after this!',
+    description:
+      "Get a glimpse of what our software is capable of. Just a heads up you'll never leave us after this!",
     features: [
       '1000 free requests',
       '1000 free requests',
       '1000 free requests',
       '1000 free requests',
-    ]
+    ],
   },
   {
     title: 'Pro',
     price: 10,
-    description: 'Get a glimpse of what our software is capable of. Just a heads up you\'ll never leave us after this!',
+    description:
+      "Get a glimpse of what our software is capable of. Just a heads up you'll never leave us after this!",
     features: [
       '1000 free requests',
       '1000 free requests',
       '1000 free requests',
       '1000 free requests',
-    ]
+    ],
   },
   {
     title: 'Enterprise',
     price: 100,
-    description: 'Get a glimpse of what our software is capable of. Just a heads up you\'ll never leave us after this!',
+    description:
+      "Get a glimpse of what our software is capable of. Just a heads up you'll never leave us after this!",
     features: [
       '1000 free requests',
       '1000 free requests',
       '1000 free requests',
       '1000 free requests',
-    ]
-  }
-]
-
+    ],
+  },
+];

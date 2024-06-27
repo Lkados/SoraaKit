@@ -1,3 +1,5 @@
+import { expect } from '@jest/globals'; // Added this line to import expect
+
 import { AppConfig } from './AppConfig';
 import { getI18nPath } from './Helpers';
 

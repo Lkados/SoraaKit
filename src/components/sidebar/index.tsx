@@ -1,32 +1,28 @@
-'use client'
-import Link from 'next/link'
-import { usePathname } from 'next/navigation'
-import React from 'react'
+'use client';
+
+import clsx from 'clsx';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import React from 'react';
+
+import { Separator } from '@/components/ui/separator';
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from '@/components/ui/tooltip'
-import { menuOptions } from '@/lib/constant'
-import clsx from 'clsx'
-import { Separator} from '@/components/ui/separator'
-import { Database, GitBranch, LucideMousePointerClick } from 'lucide-react'
-import { ModeToggle } from '../features/mode-toggle'
-import { UserButton } from "@clerk/nextjs";
+} from '@/components/ui/tooltip';
+import { menuOptions } from '@/lib/constant';
 
-type Props = {}
+import { ModeToggle } from '../features/mode-toggle';
 
-const MenuOptions = (props: Props) => {
-  const pathName = usePathname()
+const MenuOptions = () => {
+  const pathName = usePathname();
 
   return (
-    <nav className=" dark:bg-black h-screen overflow-scroll  justify-between flex items-center flex-col  gap-10 py-6 px-2">
-      <div className="flex items-center justify-center flex-col gap-8">
-        <Link
-          className="flex font-bold flex-row "
-          href="/"
-        >
+    <nav className=" flex h-screen flex-col  items-center justify-between gap-10 overflow-scroll  px-2 py-6 dark:bg-black">
+      <div className="flex flex-col items-center justify-center gap-8">
+        <Link className="flex flex-row font-bold " href="/">
           Soraa.
         </Link>
         <TooltipProvider>
@@ -38,11 +34,11 @@ const MenuOptions = (props: Props) => {
                     <Link
                       href={menuItem.href}
                       className={clsx(
-                        'group h-8 w-8 flex items-center justify-center  scale-[1.5] rounded-lg p-[3px]  cursor-pointer',
+                        'group flex size-8 scale-150 cursor-pointer items-center  justify-center rounded-lg p-[3px]',
                         {
                           'dark:bg-[#2F006B] bg-[#EEE0FF] ':
                             pathName === menuItem.href,
-                        }
+                        },
                       )}
                     >
                       <menuItem.Component
@@ -63,11 +59,11 @@ const MenuOptions = (props: Props) => {
         </TooltipProvider>
         <Separator />
       </div>
-      <div className="flex items-center justify-center flex-col gap-8">
+      <div className="flex flex-col items-center justify-center gap-8">
         <ModeToggle />
       </div>
     </nav>
-  )
-}
+  );
+};
 
-export default MenuOptions
+export default MenuOptions;

@@ -1,20 +1,20 @@
-import type { LocalePrefix } from "node_modules/next-intl/dist/types/src/shared/types";
+import type { LocalePrefix } from 'next-intl/routing';
 
-const localePrefix: LocalePrefix = "as-needed";
+const localePrefix: LocalePrefix = 'as-needed';
 
 export const AppConfig = {
-  name: "soraa",
+  name: 'LinkUpper',
   locales: [
     {
-      id: "en",
-      name: "English",
+      id: 'en',
+      name: 'English',
     },
     {
-      id: "fr",
-      name: "Français",
+      id: 'fr',
+      name: 'Français',
     },
   ],
-  defaultLocale: "en",
+  defaultLocale: 'en',
   localePrefix,
 };
 
