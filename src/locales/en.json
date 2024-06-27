@@ -1,0 +1,21 @@
+{
+  "Navbar": {
+    "product": "Product",
+    "pricing": "Pricing",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "Hero": {
+    "title": "Speed Up Your Work With Soraa",
+    "button": "Start For Free Today"
+  },
+  "Parallax": {
+    "title": "The Ultimate nextJs SaaS starter kit"
+  },
+  "Pricing": {
+    "title": "Plant That",
+    "subtitle": "Fit You Best",
+    "try": "Try Now",
+    "button": "Start For Free Today"
+  }
+}
