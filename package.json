@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "dev:spotlight": "spotlight-sidecar",
     "dev": "next dev --experimental-https",
     "build": "next build",
     "start": "next start",
@@ -23,6 +24,8 @@
     "@radix-ui/react-separator": "^1.1.0",
     "@radix-ui/react-slot": "^1.1.0",
     "@radix-ui/react-tooltip": "^1.1.1",
+    "@sentry/nextjs": "8",
+    "@spotlightjs/spotlight": "^2.0.0",
     "@tsparticles/engine": "^3.4.0",
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/slim": "^3.4.0",
