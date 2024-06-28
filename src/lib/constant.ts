@@ -1,7 +1,7 @@
 import Home from '@/components/icons/home';
 
 export const clients = [...new Array(10)].map((_, index) => ({
-  href: `/assets/${index + 1}.png`,
+  href: `/assets/infiniteCard/${index + 1}.png`,
 }));
 
 export const products = [

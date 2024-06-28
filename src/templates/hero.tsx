@@ -1,8 +1,8 @@
 import { useTranslations } from 'next-intl';
 import React from 'react';
 
-import { ContainerScroll } from '../features/container-scroll-animation';
-import { Button } from '../ui/button';
+import { ContainerScroll } from '../components/features/landing/container-scroll-animation';
+import { Button } from '../components/ui/button';
 
 const Hero = () => {
   const t = useTranslations('Hero');

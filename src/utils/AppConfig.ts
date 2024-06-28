@@ -3,7 +3,7 @@ import type { LocalePrefix } from 'next-intl/routing';
 const localePrefix: LocalePrefix = 'as-needed';
 
 export const AppConfig = {
-  name: 'LinkUpper',
+  name: 'Soraa',
   locales: [
     {
       id: 'en',

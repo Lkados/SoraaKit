@@ -1,6 +1,6 @@
 import React from "react";
-import { LampComponent } from "../features/lamp";
-import { CardBody, CardContainer, CardItem } from "../features/3d-card";
+import { LampComponent } from "../components/features/landing/lamp";
+import { CardBody, CardContainer, CardItem } from "../components/features/landing/3d-card";
 import { CheckIcon } from 'lucide-react'
 import { useTranslations } from 'next-intl';
 import { plans } from "@/lib/constant";

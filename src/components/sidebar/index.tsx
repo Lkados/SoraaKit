@@ -14,7 +14,7 @@ import {
 } from '@/components/ui/tooltip';
 import { menuOptions } from '@/lib/constant';
 
-import { ModeToggle } from '../features/mode-toggle';
+import { ModeToggle } from '../features/landing/mode-toggle';
 
 const MenuOptions = () => {
   const pathName = usePathname();

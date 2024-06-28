@@ -1,9 +1,11 @@
-import { InfiniteMovingCards } from "@/components/features/infinite-moving-cards";
-import Hero from "@/components/global/hero";
-import Navbar from "@/components/global/navbar";
-import { clients, products } from "@/lib/constant";
-import { HeroParallax } from "@/components/features/connect-parallax";
-import Pricing from "@/components/global/pricing";
+import { HeroParallax } from '@/components/features/landing/connect-parallax';
+import { InfiniteMovingCards } from '@/components/features/landing/infinite-moving-cards';
+import { clients, products } from '@/lib/constant';
+import { CTA } from '@/templates/CTA';
+import { Footer } from '@/templates/Footer';
+import Hero from '@/templates/hero';
+import Navbar from '@/templates/navbar';
+import Pricing from '@/templates/pricing';
 
 export default function Home() {
   return (
@@ -11,13 +13,15 @@ export default function Home() {
       <Navbar />
       <Hero />
       <InfiniteMovingCards
-        className="md:mt-[5rem] mt-[-80px] mx-auto"
+        className="mx-auto mt-[-80px] md:mt-20"
         items={clients}
         direction="right"
         speed="slow"
       />
-      <HeroParallax products={products}></HeroParallax>
+      <HeroParallax products={products} />
       <Pricing />
+      <CTA />
+      <Footer />
     </main>
   );
 }
