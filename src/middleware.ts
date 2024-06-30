@@ -37,5 +37,5 @@ export const config = {
     // Re-include any files in the api or trpc folders that might have an extension
     '/(api|trpc)(.*)',
   ],
-  runtime: 'edge', // Ensure the middleware uses the Edge runtime
+  runtime: 'experimental-edge', // Ensure the middleware uses the Edge runtime
 };
