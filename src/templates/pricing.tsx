@@ -17,10 +17,10 @@ const Pricing = () => {
     <section className="mt-[-2000px]">
       <LampComponent title={t('title')} subtitle={t('subtitle')} />
       <div className="-mt-72 flex flex-col flex-wrap items-center justify-center gap-8 md:flex-row">
-        {plans.map((plan, index) => (
-          <CardContainer key={index} className="inter-var ">
+        {plans.map((plan) => (
+          <CardContainer key={plan.id}>
             <CardBody
-              className={`group/card relative bg-gray-50 dark:bg-black dark:hover:shadow-2xl dark:hover:shadow-neutral-500/[0.1] ${index % 2 === 0 ? 'border-black/[0.1] dark:border-white/[0.2]' : 'border-white'} h-auto w-full rounded-xl border p-6 md:!w-[350px]`}
+              className={`group/card relative bg-gray-50 dark:bg-black dark:hover:shadow-2xl dark:hover:shadow-neutral-500/[0.1] ${plan.id % 2 === 0 ? 'border-black/[0.1] dark:border-white/[0.2]' : 'border-white'} h-auto w-full rounded-xl border p-6 md:!w-[350px]`}
             >
               <CardItem
                 translateZ="50"
@@ -35,8 +35,8 @@ const Pricing = () => {
               >
                 {plan.description}
                 <ul className="my-4 flex flex-col gap-2">
-                  {plan.features.map((feature, index) => (
-                    <li key={index} className="flex items-center gap-2">
+                  {plan.features.map((feature) => (
+                    <li key={feature} className="flex items-center gap-2">
                       <CheckIcon />
                       {feature}
                     </li>

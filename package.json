@@ -10,6 +10,7 @@
     "test": "jest",
     "clean": "rimraf .next .swc out coverage",
     "lint": "next lint",
+    "format": "next lint --fix && prettier '**/*.{json,yaml}' --write --ignore-path .gitignore",
     "prepare": "husky",
     "check-types": "tsc --noEmit --pretty",
     "commit": "cz"

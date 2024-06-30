@@ -91,6 +91,7 @@ export const menuOptions = [
 
 export const plans = [
   {
+    id: 1,
     title: 'Starter',
     price: 0,
     description:
@@ -103,6 +104,7 @@ export const plans = [
     ],
   },
   {
+    id: 2,
     title: 'Pro',
     price: 10,
     description:
@@ -115,6 +117,7 @@ export const plans = [
     ],
   },
   {
+    id: 3,
     title: 'Enterprise',
     price: 100,
     description:
