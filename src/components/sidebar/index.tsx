@@ -12,7 +12,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from '@/components/ui/tooltip';
-import { menuOptions } from '@/lib/constant';
+import { menuOptions } from '@/utils/constant';
 
 import { ModeToggle } from '../features/landing/mode-toggle';
 
